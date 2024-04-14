@@ -22,4 +22,3 @@ python script_name.py
 ## License
 MIT
 <!-- updated: 2025-12-10-r01 -->
-
