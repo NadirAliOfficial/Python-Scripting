@@ -1,26 +1,31 @@
 # Python Scripting Collection
 
-A collection of Python utility scripts covering automation, file handling, web scraping, and more.
+A growing collection of Python utility scripts for automation, file processing, web scraping, and system tasks.
 
-## Scripts Included
-- File management and batch renaming
-- Web scraping with BeautifulSoup
-- Data parsing and CSV manipulation
-- API integration helpers
+## Scripts
 
-## Requirements
-```
-pip install -r requirements.txt
-```
+| Script | Description |
+|--------|-------------|
+| `CSV TO TEXT.py` | Convert CSV files to formatted plain text reports |
+| `file_renamer.py` | Bulk rename files with regex patterns |
+| `dir_cleaner.py` | Auto-organize downloads folder by file type |
+| `site_monitor.py` | Monitor website uptime and alert on downtime |
 
 ## Usage
-Each script is standalone. Run directly:
+
 ```bash
-python script_name.py
+# CSV to text
+python "CSV TO TEXT.py" input.csv output.txt
+
+# Bulk rename
+python file_renamer.py --dir ./photos --pattern "IMG_{n:04d}"
+
+# Clean downloads
+python dir_cleaner.py --dir ~/Downloads
 ```
 
-## License
-MIT
-<!-- updated: 2025-12-10-r01 -->
+## Requirements
 
-
+```bash
+pip install requests beautifulsoup4
+```
